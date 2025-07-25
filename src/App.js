@@ -66,7 +66,9 @@ function App() {
       {/* Header */}
       <header className="bg-green-700 text-white py-6 text-center shadow-md">
         <h1 className="text-3xl font-bold">Profil Dusun Kolodanan</h1>
-        <p className="text-sm mt-1">Desa Bligo, Kecamatan Ngluwar, Kabupaten Magelang</p>
+        <p className="text-sm mt-1">
+          Desa Bligo, Kecamatan Ngluwar, Kabupaten Magelang
+        </p>
       </header>
 
       {/* Navbar */}
@@ -89,7 +91,7 @@ function App() {
 
       {/* Deskripsi Section */}
       <section id="deskripsi" className="p-6 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-semibold border-b pb-2 mb-4">
+        <h2 className="text-2xl font-semibold border-b pb-2 mb-4 text-center">
           Deskripsi Dusun
         </h2>
         <div className="md:flex gap-6 items-start">
@@ -114,17 +116,25 @@ function App() {
 
       {/* Kesenian Section */}
       <section id="kesenian" className="p-6 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-semibold border-b pb-2 mb-4">
+        <h2 className="text-2xl font-semibold border-b pb-2 mb-4 text-center">
           Kesenian Dusun
         </h2>
         <h3 className="text-xl font-bold text-green-800 mb-2">Kethoprak</h3>
         <p className="mb-4 text-justify">
-          Kethoprak adalah seni pertunjukan tradisional Jawa yang masih aktif
-          dilestarikan oleh warga Dusun Kolodanan. Pertunjukan ini biasanya
-          digelar pada saat perayaan hari besar atau acara adat dusun, dan
-          menjadi sarana hiburan sekaligus pelestarian budaya lokal. Dengan
-          iringan gamelan dan cerita pewayangan atau kehidupan rakyat, kethoprak
-          memberikan nuansa khas budaya Jawa yang kental.
+          Kesenian Ketoprak di Dusun Kolodanan merupakan salah satu bentuk
+          pelestarian budaya Jawa yang masih dijaga hingga kini dan dapat
+          dinikmati oleh berbagai kalangan usia, mulai dari anak-anak hingga
+          orang dewasa. Bagi anak-anak, ketoprak menjadi media pengenalan budaya
+          lokal melalui cerita rakyat dan legenda yang dikemas dengan
+          tokoh-tokoh menarik serta iringan musik gamelan. Untuk remaja,
+          ketoprak memberikan pemahaman nilai-nilai moral, sejarah, dan
+          kebijaksanaan lokal melalui dialog berbahasa Jawa dan pertunjukan yang
+          sarat makna. Sementara itu, bagi masyarakat dewasa, ketoprak bukan
+          hanya menjadi sarana hiburan, tetapi juga ruang refleksi budaya yang
+          mengandung pesan kehidupan dan kritik sosial. Ketoprak di Dusun
+          Kolodanan menjadi simbol kearifan lokal yang perlu terus dijaga,
+          diperkenalkan kepada generasi muda, dan dikembangkan sebagai bagian
+          dari identitas budaya masyarakat setempat.
         </p>
 
         {/* Carousel */}
@@ -195,57 +205,62 @@ function App() {
       </section>
 
       {/* Struktur Section */}
-      <section id="struktur" className="p-6 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-semibold border-b pb-2 mb-4">
+      <section id="struktur" className="p-6 max-w-4xl mx-auto">
+        <h2 className="text-2xl font-semibold border-b pb-2 mb-6 text-center">
           Struktur Kepengurusan Dusun
         </h2>
-        <div className="grid md:grid-cols-2 gap-4 text-base">
-          <div className="bg-white p-4 rounded shadow">
-            <p>
-              <strong>Kepala Dusun:</strong> Bp. Sari Asmaya
-            </p>
+
+        {/* Kepala Dusun */}
+        <div className="text-center mb-6">
+          <div className="inline-block bg-green-200 text-green-900 font-bold p-4 rounded-lg shadow">
+            Kepala Dusun: Bp. Sari Asmaya
           </div>
-          <div className="bg-white p-4 rounded shadow">
-            <p>
-              <strong>Ketua RW:</strong> Bp. Suratman
-            </p>
+        </div>
+
+        {/* Ketua RW */}
+        <div className="flex justify-center mb-6 relative">
+          <div className="w-1 h-6 bg-green-400 absolute top-[-1.5rem]"></div>{" "}
+          {/* Garis ke atas */}
+          <div className="bg-green-100 p-4 rounded-lg shadow font-semibold text-center w-fit">
+            Ketua RW: Bp. Suratman
           </div>
-          <div className="bg-white p-4 rounded shadow">
-            <p>
-              <strong>Ketua RT 1:</strong> Bp. Muh Drajat
-            </p>
+        </div>
+
+        {/* Ketua RT */}
+        <div className="flex justify-center mb-6 relative">
+          <div className="absolute w-px h-6 bg-green-400 top-[-1.5rem] left-1/2 transform -translate-x-1/2"></div>{" "}
+          {/* Garis ke atas */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="bg-white p-4 rounded shadow text-center">
+              Ketua RT 1: Bp. Muh Drajat
+            </div>
+            <div className="bg-white p-4 rounded shadow text-center">
+              Ketua RT 2: Bp. Wardoyo
+            </div>
+            <div className="bg-white p-4 rounded shadow text-center">
+              Ketua RT 3: Bp. Supriyadi, S.H
+            </div>
+            <div className="bg-white p-4 rounded shadow text-center">
+              Ketua RT 4: Bp. Sugito
+            </div>
+            <div className="bg-white p-4 rounded shadow text-center md:col-start-2">
+              Ketua RT 5: Bp. Parjiono
+            </div>
           </div>
-          <div className="bg-white p-4 rounded shadow">
-            <p>
-              <strong>Ketua RT 2:</strong> Bp. Wardoyo
-            </p>
-          </div>
-          <div className="bg-white p-4 rounded shadow">
-            <p>
-              <strong>Ketua RT 3:</strong> Bp. Supriyadi, S.H
-            </p>
-          </div>
-          <div className="bg-white p-4 rounded shadow">
-            <p>
-              <strong>Ketua RT 4:</strong> Bp. Sugito
-            </p>
-          </div>
-          <div className="bg-white p-4 rounded shadow">
-            <p>
-              <strong>Ketua RT 5:</strong> Bp. Parjiono
-            </p>
-          </div>
-          <div className="bg-white p-4 rounded shadow md:col-span-2">
-            <p>
-              <strong>Ketua Pemuda:</strong> Muhammad Raihan Prayoga
-            </p>
+        </div>
+
+        {/* Ketua Pemuda */}
+        <div className="flex justify-center mt-8 relative">
+          <div className="absolute w-px h-6 bg-green-400 top-[-1.5rem] left-1/2 transform -translate-x-1/2"></div>
+          <div className="bg-green-50 text-green-800 p-4 rounded shadow text-center font-semibold w-fit">
+            Ketua Pemuda: Muhammad Raihan Prayoga
           </div>
         </div>
       </section>
 
       {/* UMKM Section */}
       <section id="umkm" className="p-6 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-semibold border-b pb-2 mb-6">
+        <h2 className="text-2xl font-semibold border-b pb-2 mb-6 text-center">
           UMKM Dusun
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
