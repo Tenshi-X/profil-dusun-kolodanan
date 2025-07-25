@@ -41,10 +41,10 @@ function App() {
   ];
 
   const kethoprakImages = [
-    "/kethoprak-1.jpg",
-    "/kethoprak-2.jpg",
-    "/kethoprak-3.jpg",
-    "/kethoprak-4.jpg",
+    `${process.env.PUBLIC_URL}/kethoprak-1.jpg`,
+    `${process.env.PUBLIC_URL}/kethoprak-2.jpg`,
+    `${process.env.PUBLIC_URL}/kethoprak-3.jpg`,
+    `${process.env.PUBLIC_URL}/kethoprak-4.jpg`,
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -96,7 +96,7 @@ function App() {
         </h2>
         <div className="md:flex gap-6 items-start">
           <img
-            src="/foto-dusun.jpg"
+            src={`${process.env.PUBLIC_URL}/foto-dusun.jpg`}
             alt="Foto Dusun"
             className="rounded-md shadow-md w-full md:w-1/2"
           />
