@@ -67,7 +67,8 @@ function App() {
       <header className="bg-green-700 text-white py-6 text-center shadow-md">
         <h1 className="text-3xl font-bold">Profil Dusun Kolodanan</h1>
         <p className="text-sm mt-1">
-          Desa Bligo, Kecamatan Ngluwar, Kabupaten Magelang
+          Desa Bligo, Kecamatan Ngluwar, Kabupaten Magelang, Provinsi Jawa
+          Tengah
         </p>
       </header>
 
@@ -269,6 +270,13 @@ function App() {
               key={index}
               className="bg-white p-5 rounded-lg shadow hover:shadow-lg transition"
             >
+              {/* Gambar UMKM */}
+              <img
+                src={`/${umkm.gambar}`}
+                alt={`Foto ${umkm.nama}`}
+                className="w-full h-48 object-cover rounded mb-4"
+              />
+
               <h3 className="text-xl font-bold text-green-800 mb-2">
                 {umkm.nama}
               </h3>
@@ -290,6 +298,33 @@ function App() {
           ))}
         </div>
       </section>
+      {/* Footer */}
+      <footer className="bg-green-700 text-white py-6 mt-12 text-center">
+        <p className="mb-2">
+          Web profil dusun dibuat oleh <strong>KKN AA.83.003</strong>{" "}
+          Universitas Pembangunan Nasional &quot;Veteran&quot; Yogyakarta
+        </p>
+        <p className="mb-1">
+          Instagram:{" "}
+          <a
+            href="https://instagram.com/colodanans"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-green-200"
+          >
+            @colodanans
+          </a>
+          , TikTok:{" "}
+          <a
+            href="https://tiktok.com/@colodanans"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-green-200"
+          >
+            @colodanans
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }
