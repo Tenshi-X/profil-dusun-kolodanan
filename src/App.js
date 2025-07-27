@@ -6,37 +6,42 @@ function App() {
       nama: "Mie Nyemek Mbok Katar",
       produk: "Warung Makan",
       kontak: "081328598488",
-      gambar:`${process.env.PUBLIC_URL}/mbok-katar.jpg`,
+      gambar: `${process.env.PUBLIC_URL}/mbok-katar.jpg`,
       maps: "https://maps.app.goo.gl/jdcQ63UXBheXvLwk8",
     },
     {
       nama: "Warung Pak Mamik",
       produk: "Toko Kelontong",
       kontak: "08561851234",
+      gambar: `${process.env.PUBLIC_URL}/pak-mamik.png`,
       maps: "https://maps.app.goo.gl/EJMfN2yv4ZPwJAKN8",
     },
     {
       nama: "Warung Mbah Darno",
       produk: "Toko Kelontong",
       kontak: "-",
+      gambar: `${process.env.PUBLIC_URL}/mbah-darno.png`,
       maps: "https://maps.app.goo.gl/bLC4VPR6anRFhE1S8",
     },
     {
       nama: "Warung Bu Amini",
       produk: "Toko Kelontong",
       kontak: "-",
+      gambar: `${process.env.PUBLIC_URL}/bu-amini.png`,
       maps: "https://maps.app.goo.gl/m8Gz7QVSsxCtKSoS8",
     },
     {
       nama: "Moko Endok",
       produk: "Peternakan Ayam",
       kontak: "087834758363",
+      gambar: `${process.env.PUBLIC_URL}/moko-endog.png`,
       maps: "https://maps.app.goo.gl/gHay5SiUV76ukJTTA",
     },
     {
       nama: "Warung Mbah Mudo",
       produk: "Kedai Sarapan",
       kontak: "083113099696",
+      gambar: `${process.env.PUBLIC_URL}/mbah-mudo.png`,
       maps: "https://maps.app.goo.gl/fiprrTjAEMgmrDbv5",
     },
   ];
@@ -273,7 +278,7 @@ function App() {
             >
               {/* Gambar UMKM */}
               <img
-                src={`/${umkm.gambar}`}
+                src={umkm.gambar}
                 alt={`Foto ${umkm.nama}`}
                 className="w-full h-48 object-cover rounded mb-4"
               />
