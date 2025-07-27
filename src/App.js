@@ -6,6 +6,7 @@ function App() {
       nama: "Mie Nyemek Mbok Katar",
       produk: "Warung Makan",
       kontak: "081328598488",
+      gambar:`${process.env.PUBLIC_URL}/mbok-katar.jpg`,
       maps: "https://maps.app.goo.gl/jdcQ63UXBheXvLwk8",
     },
     {
