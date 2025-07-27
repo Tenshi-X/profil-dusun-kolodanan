@@ -329,6 +329,15 @@ function App() {
           >
             @colodanans
           </a>
+          , YouTube:{" "}
+          <a
+            href="https://www.youtube.com/@kkn.kolodanan03"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-green-200"
+          >
+            @kkn.kolodanan03
+          </a>
         </p>
       </footer>
     </div>
